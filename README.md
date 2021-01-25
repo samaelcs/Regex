@@ -1,4 +1,4 @@
-# Regex
+# To generate language for a given regular expression
 
 
 ## Installation
