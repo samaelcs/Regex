@@ -1,5 +1,5 @@
-# (1) To generate language for a given regular expression
-# (2) To convert regular grammar to context free grammar
+# (1) To generate language for a given regular expression (main.py)
+# (2) To convert regular grammar to context free grammar (Generate.py)
 
 
 ## Installation
