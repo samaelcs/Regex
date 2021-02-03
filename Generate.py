@@ -2,7 +2,7 @@ from pythonds.basic.stack import Stack
 import random
 import string
 
-exp = '( ( ( a + null ) | ( b * null ) ) . c )'
+exp = '( ( ( a + null ) | ( b * null ) ) . c )' #Enter regular expression here
 
 Parent = Stack()
 Ch = Stack()
