@@ -13,7 +13,6 @@ def Convert(exp):
     ListExp = exp.split()
     Production = {}
     NonTerminals = list(string.ascii_uppercase)
-    start = True
 
     for i in ListExp:
 
@@ -26,10 +25,10 @@ def Convert(exp):
             right = Ch.pop()
             left = Ch.pop()
 
-            if start == True:
+            if Parent.isEmpty():
                 NT = 'S'
                 del NonTerminals[NonTerminals.index('S')]
-                start = False
+
             else:
                 NT = random.choice(NonTerminals)
                 del NonTerminals[NonTerminals.index(NT)]
@@ -56,5 +55,7 @@ def Convert(exp):
             else:
                 print(Production[key][i], end = '')
         print()
+
+    print('This is the context free for the given regular expression where S is the start symbol')
 
 Convert(exp)
