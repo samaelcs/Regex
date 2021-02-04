@@ -56,6 +56,6 @@ def Convert(exp):
                 print(Production[key][i], end = '')
         print()
 
-    print('This is the context free for the given regular expression where S is the start symbol')
+    print('This is the context free grammar for the given regular expression where S is the start symbol')
 
 Convert(exp)
