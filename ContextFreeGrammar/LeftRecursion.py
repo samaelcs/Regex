@@ -1,6 +1,6 @@
 import copy
 
-numRules = int(input('Enter the number of non-terminals'))
+numRules = int(input('Enter the number of terminals'))
 
 ProductionRules = []
 for i in range(numRules):
