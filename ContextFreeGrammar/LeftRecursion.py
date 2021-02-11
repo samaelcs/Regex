@@ -33,7 +33,10 @@ def Remove(pd):
                 NewProduction[NT].append(NT + r"'")
             else:
                 for j in range(len(NewProduction[NT])):
-                    NewProduction[NT][j] = (NewProduction[NT][j] + NT + r"'")
+                    if NewProduction[NT][j] == 'EPSILON':
+                        NewProduction[NT][j] = NT + r"'"
+                    else:
+                        NewProduction[NT][j] = (NewProduction[NT][j] + NT + r"'")
 
     for key in NewProduction.keys():
         print(key, ' --> ', end = '')
