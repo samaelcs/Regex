@@ -31,6 +31,8 @@ def Convert(exp):
 
             else:
                 NT = random.choice(NonTerminals)
+                while NT == 'S':
+                    NT = random.choice(NonTerminals)
                 del NonTerminals[NonTerminals.index(NT)]
 
             if op == '|':
